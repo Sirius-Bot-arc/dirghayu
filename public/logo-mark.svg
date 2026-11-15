@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" width="320" height="380" role="img" aria-label="Dirghayu logo mark: a pointed temple arch woven from vibrant Indian cloth with a cream patch bearing the letter D">
+  <defs>
+    <!-- Arch clipping path -->
+    <clipPath id="archClip">
+      <path d="M16 372V172C16 96 76 44 160 10C244 44 304 96 304 172V372Z" fill="none"/>
+    </clipPath>
+    
+    <!-- Cloth texture patterns -->
+    <pattern id="warpPattern" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse">
+      <line x1="1" y1="0" x2="1" y2="3" stroke="#000000" stroke-width="0.5" opacity="0.11"/>
+    </pattern>
+    <pattern id="weftPattern" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="1" x2="3" y2="1" stroke="#FFFFFF" stroke-width="0.5" opacity="0.14"/>
+    </pattern>
+    
+    <!-- Bandhani dot pattern for bottom band -->
+    <pattern id="bandhaniPattern" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse">
+      <!-- Diamond of 4 cream dots + marigold center -->
+      <circle cx="9" cy="3" r="1.5" fill="#FBF3E4"/>
+      <circle cx="3" cy="9" r="1.5" fill="#FBF3E4"/>
+      <circle cx="15" cy="9" r="1.5" fill="#FBF3E4"/>
+      <circle cx="9" cy="15" r="1.5" fill="#FBF3E4"/>
+      <circle cx="9" cy="9" r="1.5" fill="#FFB300"/>
+    </pattern>
+    
+    <!-- Grain filter -->
+    <filter id="grainFilter" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="multiply" result="grain"/>
+    </filter>
+  </defs>
+
+  <!-- Main arch filled with rani pink -->
+  <path d="M16 372V172C16 96 76 44 160 10C244 44 304 96 304 172V372Z" fill="#D81B60" clip-path="url(#archClip)"/>
+
+  <!-- Vertical side stripes (left) -->
+  <rect x="16" y="16" width="18" height="356" fill="#FF9933" clip-path="url(#archClip)"/>   <!-- saffron 16-34 -->
+  <rect x="34" y="16" width="8" height="356" fill="#FBF3E4" clip-path="url(#archClip)"/>    <!-- cream 34-42 -->
+  <rect x="42" y="16" width="14" height="356" fill="#00838F" clip-path="url(#archClip)"/>   <!-- teal 42-56 -->
+
+  <!-- Vertical side stripes (right) - mirrored -->
+  <rect x="264" y="16" width="14" height="356" fill="#00838F" clip-path="url(#archClip)"/>  <!-- teal 264-278 -->
+  <rect x="278" y="16" width="8" height="356" fill="#FBF3E4" clip-path="url(#archClip)"/>    <!-- cream 278-286 -->
+  <rect x="286" y="16" width="18" height="356" fill="#FF9933" clip-path="url(#archClip)"/>   <!-- saffron 286-304 -->
+
+  <!-- Bottom bandhani band (indigo with pattern) -->
+  <rect x="16" y="330" width="288" height="42" fill="#2E3A8C" clip-path="url(#archClip)"/>
+  <rect x="16" y="330" width="288" height="42" fill="url(#bandhaniPattern)" clip-path="url(#archClip)"/>
+
+  <!-- Top marigold bindu with cream ring -->
+  <circle cx="160" cy="52" r="12" fill="#FBF3E4" clip-path="url(#archClip)"/>
+  <circle cx="160" cy="52" r="6.5" fill="#FFB300" clip-path="url(#archClip)"/>
+
+  <!-- Centre patch: pointed arch filled cream with marigold stroke -->
+  <path d="M70 330V190C70 138 108 100 160 76C212 100 250 138 250 190V330Z" fill="#FBF3E4" stroke="#FFB300" stroke-width="10" clip-path="url(#archClip)"/>
+  
+  <!-- Inner dashed running-stitch outline (rani pink) -->
+  <path d="M82 322V192C82 148 114 114 160 92C206 114 238 148 238 192V322Z" fill="none" stroke="#D81B60" stroke-width="2" stroke-dasharray="6 4" clip-path="url(#archClip)"/>
+
+  <!-- Letter D centered in patch -->
+  <text x="160" y="268" font-family="Fraunces, Georgia, serif" font-size="170" font-weight="700" fill="#5B1033" text-anchor="middle" dominant-baseline="central" clip-path="url(#archClip)">D</text>
+
+  <!-- Cloth texture overlay (warp + weft + grain) -->
+  <rect x="16" y="16" width="288" height="356" fill="url(#warpPattern)" clip-path="url(#archClip)" filter="url(#grainFilter)"/>
+  <rect x="16" y="16" width="288" height="356" fill="url(#weftPattern)" clip-path="url(#archClip)"/>
+</svg>

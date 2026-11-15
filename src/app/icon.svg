@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Dirghayu favicon">
+  <!-- Flat arch + D, no texture, legible at 32px -->
+  <defs>
+    <clipPath id="iconArchClip">
+      <path d="M1.6 31.2V14.5C1.6 8.1 6.1 3.7 12.8 0.8C19.5 3.7 23.9 8.1 23.9 14.5V31.2Z" fill="none"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Arch background - rani pink -->
+  <path d="M1.6 31.2V14.5C1.6 8.1 6.1 3.7 12.8 0.8C19.5 3.7 23.9 8.1 23.9 14.5V31.2Z" fill="#D81B60" clip-path="url(#iconArchClip)"/>
+  
+  <!-- Side stripes (simplified) -->
+  <rect x="1.6" y="1.6" width="2.9" height="29.6" fill="#FF9933" clip-path="url(#iconArchClip)"/>
+  <rect x="4.5" y="1.6" width="1.3" height="29.6" fill="#FBF3E4" clip-path="url(#iconArchClip)"/>
+  <rect x="5.8" y="1.6" width="2.2" height="29.6" fill="#00838F" clip-path="url(#iconArchClip)"/>
+  <rect x="21.3" y="1.6" width="2.2" height="29.6" fill="#00838F" clip-path="url(#iconArchClip)"/>
+  <rect x="23.5" y="1.6" width="1.3" height="29.6" fill="#FBF3E4" clip-path="url(#iconArchClip)"/>
+  <rect x="24.8" y="1.6" width="2.9" height="29.6" fill="#FF9933" clip-path="url(#iconArchClip)"/>
+  
+  <!-- Bottom band - indigo -->
+  <rect x="1.6" y="26.2" width="27.8" height="5" fill="#2E3A8C" clip-path="url(#iconArchClip)"/>
+  
+  <!-- Top bindu -->
+  <circle cx="16" cy="4.2" r="1.8" fill="#FBF3E4" clip-path="url(#iconArchClip)"/>
+  <circle cx="16" cy="4.2" r="1.0" fill="#FFB300" clip-path="url(#iconArchClip)"/>
+  
+  <!-- Centre patch arch - cream with marigold stroke -->
+  <path d="M7 26.2V15.1C7 11.0 9.7 8.0 14.3 6.1C18.9 8.0 21.6 11.0 21.6 15.1V26.2Z" fill="#FBF3E4" stroke="#FFB300" stroke-width="0.8" clip-path="url(#iconArchClip)"/>
+  
+  <!-- Inner dashed stitch (simplified solid) -->
+  <path d="M8.2 25.6V15.3C8.2 11.8 10.5 9.1 14.3 7.3C18.1 9.1 20.4 11.8 20.4 15.3V25.6Z" fill="none" stroke="#D81B60" stroke-width="0.5" stroke-dasharray="1.2 0.8" clip-path="url(#iconArchClip)"/>
+  
+  <!-- Letter D -->
+  <text x="16" y="21.5" font-family="Fraunces, Georgia, serif" font-size="13.5" font-weight="700" fill="#5B1033" text-anchor="middle" dominant-baseline="central" clip-path="url(#iconArchClip)">D</text>
+</svg>

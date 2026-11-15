@@ -1,0 +1,51 @@
+{
+  "name": "dirghayu",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "db:seed": "tsx scripts/seed.ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.13.0",
+    "bcryptjs": "^2.4.3",
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.1",
+    "firebase-admin": "^12.2.0",
+    "jose": "^5.4.0",
+    "next": "^14.2.35",
+    "nodemailer": "^6.9.14",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.0.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.14.10",
+    "@types/nodemailer": "^6.4.15",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitest/coverage-v8": "^2.0.3",
+    "autoprefixer": "^10.6.2",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.35",
+    "jsdom": "^24.1.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.7",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
